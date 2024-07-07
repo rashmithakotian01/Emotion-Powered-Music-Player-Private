@@ -1,0 +1,103 @@
+.music-player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(3, 8, 65, 0.7) 30%, rgba(28, 106, 142, 0.7) 90%), url('C:\Users\dell\OneDrive\Pictures\Screenshots\istockphoto-1076840920-612x612 (1).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.title {
+  color: rgb(249, 252, 251);
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: titleAnimation 2s ease-in-out infinite;
+}
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.emoji-container {
+  margin-bottom: 20px;
+}
+
+.emoji {
+  width: 100px;
+  height: 100px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.emotion-text {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: emotionAnimation 2s ease-in-out infinite;
+}
+
+@keyframes emotionAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#progress-slider,
+#volume-slider {
+  width: 50%;
+  margin: auto;
+}
+
+.music-player {
+  width: 100%;
+}
+
+.music-player-container marquee {
+  color: white;
+}
+
+#volume-slider {
+  width: 60%;
+}
